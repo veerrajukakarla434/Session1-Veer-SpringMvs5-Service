@@ -7,7 +7,6 @@ public class Employee {
 	private String name;
 	private String email;
 	
-	
 	public String getEmpId() {
 		return empId;
 	}
