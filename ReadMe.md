@@ -3,26 +3,33 @@
 #### Web Application :
 * A web application is a computer program that utilizes web browsers and web technology to perform tasks over the Internet.
 
-#### Here's what a typical web application flow looks like:
-
-1)  **User** triggers a request to the **web server** over the **Internet,** either through a web browser or the application’s user interface
-
-2)  **Web server** forwards this request to the appropriate **web application server**
-
-3)  **Web application server** performs the requested task – such as querying the **database** or processing the data – then generates the results of the requested data
-
-4)  **Web application server** sends results to the web server with the requested information or processed data
-
-5)  **Web server** responds back to the client with the requested information that then appears on the user’s display
-
-#### How can we develop A web Application using Java supported Technologies
-
-* **we can develop web application using java supported frameworks**
-
+#### How can we develop web application using java frame works:
+ 
 * Using Servlet's   ---> Servlet  class 
 * Using Strut's    ----> ActionServlet class
 * Using Spring    -----> DispatcherServlet class
 
+#### Spring MVC Flow
+
+* In Spring Web MVC, DispatcherServlet class works as the front controller. It is responsible to manage the flow of the spring mvc application.
+* The @Controller annotation is used to mark the class as the controller in Spring 3.
+* The @RequestMapping annotation is used to map the request url. It is applied on the method.
+
+#### Diagram
+
+![Spring_Flow](https://codenuclear.com/wp-content/uploads/2017/08/Spring_Flow.jpg "Spring_Flow")
+
+#### Spring MVC Execution Flow
+
+* **Step 1:** First request will be received by DispatcherServlet.
+
+* **Step 2:**  DispatcherServlet will take the help of HandlerMapping and get to know the Controller class name associated with the given request.
+
+* **Step 3:** So request transfer to the Controller, and then controller will process the request by executing appropriate methods and returns ModelAndView object (contains Model data and View name) back to the DispatcherServlet.
+
+* **Step 4:** Now DispatcherServlet send the model object to the ViewResolver to get the actual view page.
+
+* **Step 5:** Finally DispatcherServlet will pass the Model object to the View page to display the result.
 #### Prerequisite For This Application (Spring MVC)
 
   * Spring MVC
