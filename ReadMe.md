@@ -17,7 +17,8 @@
 
 #### Diagram
 
-![Spring_Flow](https://codenuclear.com/wp-content/uploads/2017/08/Spring_Flow.jpg "Spring_Flow")
+![image](https://github.com/user-attachments/assets/fcf469cc-1ed6-4409-ba3c-a1cf2521b698)
+
 
 #### Spring MVC Execution Flow
 
